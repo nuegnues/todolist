@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TodoList from "./components/TodoList";
+import AddTodo from "./components/AddTodo";
+import Calendar from "./components/Calendar";
+import { useState } from "react";
 
 function App() {
+  const [selectedDate, setSelectedDate] = useState("");
+  const [add, setAdd] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="Header">To-Do List</h1>
+      <Calendar setSelectedDate={setSelectedDate} />
+      <TodoList date={selectedDate} add={add} setAdd={setAdd} />
+      <AddTodo date={selectedDate} setAdd={setAdd} />
     </div>
   );
 }

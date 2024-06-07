@@ -1,0 +1,12 @@
+.calendar_container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 8px 0 0 0;
+  background-color: aliceblue;
+}
+
+.date {
+  font-size: 22px;
+  cursor: default;
+}

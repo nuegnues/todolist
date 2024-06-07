@@ -1,0 +1,16 @@
+.add_container {
+  margin: 0 20px;
+  padding: 7px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add_input {
+  background-color: aliceblue;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+  width: 100%;
+}

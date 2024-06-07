@@ -1,0 +1,44 @@
+.item_line_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item_line_container:hover {
+  background-color: rgb(248, 240, 230);
+}
+
+.checked {
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.item_checktext {
+  display: flex;
+  align-items: center;
+}
+
+.item_default_text {
+  cursor: default;
+  padding-left: 5px;
+}
+
+.item_done_text {
+  cursor: default;
+  padding-left: 5px;
+  color: grey;
+  text-decoration-line: line-through;
+}
+
+.item_buttons {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
