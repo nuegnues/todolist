@@ -15,7 +15,7 @@ function AddTodo({ date, setAdd }) {
       fetch(`https://json-server-todolist-liart.vercel.app/${date}`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/josn",
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           text: task,
