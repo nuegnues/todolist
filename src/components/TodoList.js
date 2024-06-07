@@ -9,7 +9,7 @@ function TodoList({ date, add, setAdd }) {
   const [mod, setMod] = useState(false);
 
   useEffect(() => {
-    fetch(`https://json-server-todolist-liart.vercel.app/${date}`, {
+    fetch(`https://vaulted-jealous-angora.glitch.me/${date}`, {
       headers: {
         "Content-Type": "application/json",
       },

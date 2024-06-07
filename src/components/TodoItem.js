@@ -8,7 +8,7 @@ function TodoItem({ item: i, date = "", setDel, setMod }) {
   const [popup, setPopup] = useState(false);
 
   const toggle = () => {
-    fetch(`https://json-server-todolist-liart.vercel.app/${date}/${item.id}`, {
+    fetch(`https://vaulted-jealous-angora.glitch.me/${date}/${item.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ function TodoItem({ item: i, date = "", setDel, setMod }) {
   };
 
   const deleteTodo = () => {
-    fetch(`https://json-server-todolist-liart.vercel.app/${date}/${item.id}`, {
+    fetch(`https://vaulted-jealous-angora.glitch.me/${date}/${item.id}`, {
       method: "DELETE",
     })
       .then((res) => {

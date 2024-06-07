@@ -12,19 +12,16 @@ function ModifyTodo({ handlePopup, setItem, item, date }) {
   const onSubmit = (event) => {
     event.preventDefault();
     if (task != "") {
-      fetch(
-        `https://json-server-todolist-liart.vercel.app/${date}/${item.id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...item,
-            text: task,
-          }),
-        }
-      ).then((res) => {
+      fetch(`https://vaulted-jealous-angora.glitch.me/${date}/${item.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...item,
+          text: task,
+        }),
+      }).then((res) => {
         if (res.ok) {
           setItem({
             ...item,

@@ -12,7 +12,7 @@ function AddTodo({ date, setAdd }) {
   const onSubmit = (event) => {
     event.preventDefault();
     if (task != "") {
-      fetch(`https://json-server-todolist-liart.vercel.app/${date}`, {
+      fetch(`https://vaulted-jealous-angora.glitch.me/${date}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
